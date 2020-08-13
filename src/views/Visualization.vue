@@ -1,21 +1,27 @@
 <template>
   <div id="visualization">
-    <h1>{{ title }}</h1>
+    <Quiz />
   </div>
 </template>
 
 <script>
+    import Quiz from "../components/Quiz"
     export default {
         name: 'Visualization',
-        props: {
-            title: {
-                type: String,
-                default: process.env.VUE_APP_TITLE
-            }
+        components:{
+          Quiz
         }
     }
 </script>
 
 <style scoped lang="scss">
-
+#visualization{
+  background: red;
+  /* #app is the flex parent set in App.vue */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
 </style>
