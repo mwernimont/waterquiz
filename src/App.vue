@@ -57,11 +57,12 @@
     padding: 0;
   }
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: din-2014, sans-serif;
     font-weight: 400;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    color: rgb(41,40,42);
     width: 100%;
     display: flex;
     flex-direction: column;

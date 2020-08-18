@@ -1,0 +1,77 @@
+[
+    {
+        "Question": "Like most liquids, water contracts (gets smaller) when it freezes.",
+        "Answer": false,
+        "Explanation": "Actually, water expands (gets less dense) when it freezes, which is unusual for liquids. Think of ice -- it is one of the few items that float as a solid. If it didn't, then lakes would freeze from the bottom up (that would mean we'd have to wear wet suits when ice skating), and some lakes way up north would be permanent blocks of ice."
+    },
+    {
+        "Question": "Water has a high surface tension.",
+        "Answer": true,
+        "Explanation": "Water has the highest surface tension among common liquids (mercury is higher). Surface tension is the ability of a substance to stick to itself (cohesion). This is why water forms drops, and also why, when you look at a glass of water, the water 'rises' where it touches the glass (the 'meniscus'). Plants are happy that water has a high surface tension, because it helps them to draw water from the ground up through their roots and stems."
+    },
+    {
+        "Question": "Condensation is water coming out of the air.",
+        "Answer": true,
+        "Explanation": "This is actually true. Water that forms on the outside of a cold glass or on the inside of a window in winter is liquid water condensing from water vapor in the air. Air contains water vapor (humidity). In cold air, water vapor condenses faster than it evaporates. For example, when warm air touches the outside of a cold glass, the air next to the glass gets chilled, and some of the water in that air turns from water vapor to tiny liquid water droplets. You might also find it interesting that clouds in the sky and the 'cloud' you see when you exhale on a cold day are condensed water-vapor particles. (It is a myth that clouds form because cold air cannot hold as much water vapor as warm air)"
+    },
+    {
+        "Question": "More things can be dissolved in sulfuric acid than in water.",
+        "Answer": false,
+        "Explanation": "Sulfuric acid might be able to dissolve a car, but water isn't known as the 'Universal Solvent' for nothing! It can dissolve more substances than any other liquid. This is lucky for us... what if all the sugar in your soft drink ended up as a pile at the bottom of the glass? The water you see in rivers, lakes, and the ocean may look clear, but it actually contains many dissolved elements and minerals. Because these elements are dissolved, they can easily move around with water."
+    },
+    {
+        "Question": "Rainwater is the purest form of water.",
+        "Answer": false,
+        "Explanation": "Rainwater is usually fresh and clean, but it still contains small amounts of particulates that have been blown into the air by winds. Rainwater contains tiny particles of dust and dissolved gases, such as carbon dioxide and sulfur dioxide (acid rain). That doesn't mean rainwater isn't very clean—normally only about 1/100,000th of the weight of rain comes from these substances. For really pure water, you might want to look at distilled and deionized water. Distilled water comes from water vapor condensing after it has evaporated. Rain is produced by water evaporating from the earth, oceans, other water bodies and icecaps condensing in the sky, and even from you when you exhale. So, in a way, the distillation process is responsible for rainwater."
+    },
+    {
+        "Question": "To accurately read water height in a glass rain gauge, you read the center of the water column, not the edge (meniscus) where the water meets the glass.",
+        "Answer": true,
+        "Explanation": "You do not use the edge of the water where it touches the glass, because the adhesive property of water (its 'stickiness') causes it to literally rise up along the glass. A meniscus is a curve in the surface of a molecular substance (water, of course) where it touches another material. The correct height of the water in the rain gauge is seen at the center of the water column."
+    },
+    {
+        "Question": "You can float a paper clip on top of water if you very carefully place it flat on the water surface because of the molecular skin created by the interaction of air molecules with the top layer of water molecules on the surface.",
+        "Answer": false,
+        "Explanation": "There is not really a 'skin' at the water/air meeting point—it is just water below and air above. Molecules on the water surface don't have the same attraction to the air molecules above them as the other water molecules below them...water is attracted to water (cohesion). This inward net force causes the molecules on the surface to contract and to resist being stretched or broken. The cohesive forces between liquid molecules are responsible for the phenomenon known as surface tension. It is surface tension which allows things to float on water that you would not think could, such as paper clips and bugs."
+    },
+    {
+        "Question": "Sea water is slightly more basic (the pH value is higher) than most natural fresh water.",
+        "Answer": true,
+        "Explanation": "Neutral water (such as distilled water) has a pH of 7, which is in the middle of being acidic and alkaline. Seawater happens to be slightly alkaline (basic), with a pH of about 8. Most natural water has a pH of between 6-8, although acid rain can have a pH as low as 4."
+    },
+    {
+        "Question": "Raindrops are tear-shaped.",
+        "Answer": false,
+        "Explanation": "When you think of a drop of falling water you probably think it looks like this - . When a drop of water comes out of a faucet, yes, it does have a tear shape. That is because the back end of the water drop sticks to the water still in the faucet until it can't hold on any more. Using high-speed cameras, scientists have found that falling raindrops look more like a small hamburger bun! Gravity and surface tension come into play here. As rain falls, the air below the drop pushes up from the bottom, causing the drop to flatten out somewhat. The strong surface tension of water holds the drop together, resulting in a bun shape (minus the sesame seeds)."
+    },
+    {
+        "Question": "Water boils quicker in Denver, Colorado (1 mile in altitude). than at the beach.",
+        "Answer": true,
+        "Explanation": "Yes, it will take longer to cook your noodles on top of Mt. Evans, in Colorado, than at your beach house.The boiling point of water decreases as altitude increases. At the beach, water boils at 212° Fahrenheit (100° Celsius). But at 5,000 feet, about where Denver is located, water boils at about 203° F (95°C), and at 10,000 feet it boils at 193.7°F (89.9°C). This is because as the altitude gets higher, the air pressure (the weight of all that air above you) becomes less. Boiling occurs when the vapor pressure of water exceeds atmospheric pressure. Since there is less pressure pushing on a pot of water at a higher altitude, it is easier for the water molecules to break their bonds and attraction to each other and, thus, water boils at a lower temperature."
+    },
+    {
+        "Question": "If the relative humidity of the air is 100%, then water will not evaporate into the air.",
+        "Answer": false,
+        "Explanation": "Although it is true that the volume of water in a pan placed outside where the relative humidity is 100% will not change, water from the pan is still evaporating. It is just that the same amount of water is evaporating as is condensing back from water vapor to liquid into the pan. At 100% relative humidity, equilibrium exists between water evaporating and condensing."
+    },
+    {
+        "Question": "A lightning storm is more dangerous to someone swimming in pool water than it is to someone swimming in salty ocean water.",
+        "Answer": true,
+        "Explanation": "Most people will know that water and electricity don't mix and about the dangers of taking a bath with an electric hair dryer nearby. Pure water (with no dissolved materials) is actually an excellent insulator and does not conduct electricity, but you won't often find pure water in nature. Your bath water and your swimming pool contain plenty of dissolved salts to conduct electricity. Seawater has so much dissolved salt in it, that when lightning strikes it the electricity from the lightning kind of ignores your body because the excessive salt in the seawater makes the seawater such an excellent conductor."
+    },
+    {
+        "Question": "Rainbows have colors because the raindrops act as mirrors and reflect light directly back to you.",
+        "Answer": false,
+        "Explanation": "Although you see colors in a rainbow because water drops are moving the light waves from the sunlight behind you back to your eyes, the raindrops are not acting like mirrors. Mirrors reflect light back perpendicularly, at 180 degrees. Thus, the light does not change colors. But raindrops act as tiny prisms, rather than like mirrors. The light going into the raindrops is bounced around a few times and the angles are changed, which is responsible for the different colors (wavelengths) being separated and sent back to you to see."
+    },
+    {
+        "Question": "A water molecule is 'polar' because it looks like a seesaw: The oxygen atom is in the middle and hydrogen atoms are at opposite ends of the oxygen atom.",
+        "Answer": false,
+        "Explanation": "It may be true that water molecules are 'polar', but the term polar is referring to a water molecule that looks more like the head of Mickey Mouse, than like a seesaw. The hydrogen atoms in a water molecule are both on the same side of a water molecule. Since the hydrogen atoms have a positive electrical charge and the oxygen atom has a negative electrical charge, the charges are on opposite sides of the water molecule, which is what 'polarity' means."
+    },
+    {
+        "Question": "Seawater is toxic to drink because your kidneys cannot get enough freshwater to produce enough urine to dilute the additional salt in your body to get rid of the excess salt.",
+        "Answer": true,
+        "Explanation": "Seawater is toxic because your body eventually fails when it has to try to get rid of the salt that comes from seawater. Your body normally gets rid of excess salt by having the kidneys produce urine, but it needs freshwater to dilute the salt in your body for the kidneys to work properly. Normally that is not a problem, as you are always drinking water and eating food with water. Tissue in your body also contains freshwater that can be used. But if there is too much salt in your body, your kidneys cannot get enough freshwater to dilute the salt, and your body will fail."
+    }
+]

@@ -16,7 +16,6 @@
 
 <style scoped lang="scss">
 #visualization{
-  background: red;
   /* #app is the flex parent set in App.vue */
   flex: 1;
   display: flex;
