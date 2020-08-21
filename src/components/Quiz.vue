@@ -123,17 +123,17 @@ export default {
             let previousQuestion = document.getElementById("previousQuestion");
             let answerResult = document.getElementById("answerResult");
             let explanation = document.getElementById("explanation");
-            let illustration = document.getElementById("illustration");
 
             previousQuestion.innerHTML = this.questions[this.index];
             explanation.innerHTML = this.explanations[this.index];
             answerResult.innerHTML = result;
+            //sets the SVG for the result page based on which question the user is on
+            this.icon = "question" + (this.index + 1);
+            console.log(this.icon);
 
             this.index++;
         },
         NextQuestion(){
-            this.icon = "question" + (this.index + 1);
-            console.log(this.icon);
             if(this.index <= 14){
                 this.outcome = false;
                 this.quizzing = true;
@@ -250,6 +250,13 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
         width: 150px;
         height: 150px;
         margin: 20px auto;
+    }
+
+    @media screen and (min-width: 600px){
+       #illustration{
+           width: 300px;
+           height: 300px;
+       } 
     }
 
 </style>

@@ -6,8 +6,8 @@ export default {
     name: "DynamicIcon",
     props: {
         icon: {
-        type: String,
-        required: true,
+            type: String,
+            required: true,
         },
     },
     computed: {
