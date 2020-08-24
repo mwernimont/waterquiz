@@ -2,7 +2,7 @@
     <div id="container">
         <Intro v-if="status" />
         <div id="quizContainer">
-            <div id="questionCount"></div>
+            <div id="questionCount" v-show="needed"></div>
             <div id="questionOutcome" v-show="outcome">
                 <div class="usa-accordion usa-accordion--bordered">
                     <h2 class="usa-accordion__heading">
@@ -52,6 +52,7 @@
                 </div>
             </div>
         </div>
+        <Results v-if="results" />
     </div>
 </template>
 <script>
@@ -59,11 +60,13 @@ import quizData from "@/assets/quiz/quiz.json";
 import drippyAsksQuestion from "@/assets/images/drippy/drippyAsksQuestion.svg";
 import Intro from "./Intro";
 import DynamicIcon from "./DynamicIcon";
+import Results from "./Results";
 export default {
     "name": "Quiz",
     components:{
         Intro,
         DynamicIcon,
+        Results,
         drippyAsksQuestion
     },
     data(){
@@ -71,6 +74,8 @@ export default {
             status: true,
             quizzing: false,
             outcome: false,
+            results: false,
+            needed: false,
             correctScore: 0,
             incorrectScore: 0,
             index: 0,
@@ -100,6 +105,7 @@ export default {
         BeginQuiz(){
             this.status = false;
             this.quizzing = true;
+            this.needed = true;
             this.AskQuestion();
         },
         AskQuestion(){
@@ -131,13 +137,17 @@ export default {
             let previousQuestion = document.getElementById("previousQuestion");
             let answerResult = document.getElementById("answerResult");
             let explanation = document.getElementById("explanation");
+            let nextQuestion = document.getElementById("nextQuestion");
 
             previousQuestion.innerHTML = this.questions[this.index];
             explanation.innerHTML = this.explanations[this.index];
             answerResult.innerHTML = result;
             //sets the SVG for the result page based on which question the user is on
             this.icon = "question" + (this.index + 1);
-            console.log(this.icon);
+
+            if(this.index >= 14){
+                nextQuestion.innerHTML = "View Results"
+            }
 
             this.index++;
         },
@@ -147,8 +157,20 @@ export default {
                 this.quizzing = true;
                 this.AskQuestion();
             }else{
-                console.log("Quiz Finished");
+                this.quizzing = false;
+                this.outcome = false;
+                this.needed = false;
+                this.results = true;
             }
+        },
+        RetryQuiz(){
+            this.index = 0;
+            this.correctScore = 0;
+            this.incorrectScore = 0;
+            this.results = false;
+            this.AskQuestion();
+            this.quizzing = true;
+            this.needed = true;
         }
     }
 }
@@ -184,7 +206,6 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
         flex: 1;
         text-align: center;
         h3{
-            margin: 0 0 10px 0;
             font-size: 1em;
         }
         .scoreCount{
@@ -245,8 +266,8 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
         font-weight: 700;
     }
     #illustration{
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         margin: 20px auto;
     }
 
@@ -255,6 +276,9 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
            width: 300px;
            height: 300px;
        } 
+       #question{
+           font-size: 16pt;
+       }
     }
 
 </style>
