@@ -276,6 +276,9 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
            width: 300px;
            height: 300px;
        } 
+       #question{
+           font-size: 16pt;
+       }
     }
 
 </style>
