@@ -68,4 +68,13 @@
     flex-direction: column;
     min-height: 100vh;
   }
+  .button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(0,168,212);
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    }
 </style>
