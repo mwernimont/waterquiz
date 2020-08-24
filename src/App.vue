@@ -68,6 +68,9 @@
     flex-direction: column;
     min-height: 100vh;
   }
+  h3{
+    margin: 0 0 10px 0;
+  }
   .button{
     padding: 10px;
     border-radius: 5px;
@@ -76,5 +79,16 @@
     outline: none;
     color: #fff;
     font-weight: 700;
+    font-size: 1.3em;
+  }
+  .drippyExcited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    svg{
+        max-width: 400px;
+        flex: 1;
     }
+  }
 </style>

@@ -4,7 +4,7 @@
             <h1>Water Properties Quiz</h1>
             <p>Hosted by Drippy</p>
         </div>
-        <div id="drippyExcited">
+        <div class="drippyExcited">
             <excitedDrippy />
         </div>
         <div id="begin">
@@ -33,28 +33,14 @@ $drippyBlue: rgb(60, 199, 244);
 }
 #quizTitle{
     h1{
+        color: $drippyBlue;
         margin: 0 0 10px 0;
         font-size: 28pt;
-        color: $drippyBlue;
     }
     p{
         font-size: 16pt;
         margin: 0 0 20px 0;
     }
-}
-#drippyExcited{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-
-    svg{
-        max-width: 400px;
-        flex: 1;
-    }
-}
-#begin{
-    font-size: 1.5em;
 }
 @media screen and (min-width: 600px){
     #quizTitle{
