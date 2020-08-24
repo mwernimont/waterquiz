@@ -1,5 +1,6 @@
 <template>
     <div id="container">
+        <Intro v-if="status" />
         <div id="quizContainer">
             <div id="questionCount"></div>
             <div id="questionOutcome" v-show="outcome">
@@ -56,16 +57,19 @@
 <script>
 import quizData from "@/assets/quiz/quiz.json";
 import drippyAsksQuestion from "@/assets/images/drippy/drippyAsksQuestion.svg";
+import Intro from "./Intro";
 import DynamicIcon from "./DynamicIcon";
 export default {
     "name": "Quiz",
     components:{
+        Intro,
         DynamicIcon,
         drippyAsksQuestion
     },
     data(){
         return{
-            quizzing: true,
+            status: true,
+            quizzing: false,
             outcome: false,
             correctScore: 0,
             incorrectScore: 0,
@@ -92,6 +96,10 @@ export default {
                 self.answers.push(current.Answer);
                 self.explanations.push(current.Explanation);
             });
+        },
+        BeginQuiz(){
+            this.status = false;
+            this.quizzing = true;
             this.AskQuestion();
         },
         AskQuestion(){
@@ -152,21 +160,11 @@ $chevronDown: '~@/assets/images/chevrons/chevron-down.png';
     #container{
         width: 100%;
         max-width: 800px;
+        padding: 10px 0;
     }
     #quizContainer{
         flex: 1;
-        padding: 10px;
-        
         font-size: 14pt;
-    }
-    .button{
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        background: rgb(0,168,212);
-        outline: none;
-        color: #fff;
-        font-weight: 700;
     }
     #questionCount{
         font-weight: 700;
