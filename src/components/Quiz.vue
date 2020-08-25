@@ -1,8 +1,8 @@
 <template>
     <div id="container">
-        <Intro v-if="status" />
+        <Intro v-if="introIsShowing" />
         <div id="quizContainer">
-            <div id="questionCount" v-show="needed"></div>
+            <div id="questionCount" v-show="showQuestionCount"></div>
             <div id="questionOutcome" v-show="outcome">
                 <div class="usa-accordion usa-accordion--bordered">
                     <h2 class="usa-accordion__heading">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <Results v-if="results" />
+        <Results v-if="showResults" />
     </div>
 </template>
 <script>
@@ -71,11 +71,11 @@ export default {
     },
     data(){
         return{
-            status: true,
+            introIsShowing: true,
             quizzing: false,
             outcome: false,
-            results: false,
-            needed: false,
+            showResults: false,
+            showQuestionCount: false,
             correctScore: 0,
             incorrectScore: 0,
             index: 0,
@@ -103,9 +103,9 @@ export default {
             });
         },
         BeginQuiz(){
-            this.status = false;
+            this.introIsShowing = false;
             this.quizzing = true;
-            this.needed = true;
+            this.showQuestionCount = true;
             this.AskQuestion();
         },
         AskQuestion(){
@@ -159,18 +159,18 @@ export default {
             }else{
                 this.quizzing = false;
                 this.outcome = false;
-                this.needed = false;
-                this.results = true;
+                this.showQuestionCount = false;
+                this.showResults = true;
             }
         },
         RetryQuiz(){
             this.index = 0;
             this.correctScore = 0;
             this.incorrectScore = 0;
-            this.results = false;
+            this.showResults = false;
             this.AskQuestion();
             this.quizzing = true;
-            this.needed = true;
+            this.showQuestionCount = true;
         }
     }
 }
