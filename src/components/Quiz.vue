@@ -147,6 +147,8 @@ export default {
 
             if(this.index >= 14){
                 nextQuestion.innerHTML = "View Results"
+            }else{
+                nextQuestion.innerHTML = "Next Question"
             }
 
             this.index++;
